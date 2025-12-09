@@ -1,0 +1,53 @@
+# Application Configuration
+spring.application.name=hotel-reservation-backend
+
+# Server Configuration
+server.port=8080
+
+# H2 Database Configuration (Persistente en archivo)
+spring.datasource.url=jdbc:h2:file:./data/hoteldb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+# H2 Console Configuration
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+# JPA Configuration
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.defer-datasource-initialization=true
+
+# SQL Initialization (solo ejecutar si las tablas están vacías)
+spring.sql.init.mode=never
+spring.sql.init.continue-on-error=true
+
+# Logging Configuration
+logging.level.org.springframework.web=INFO
+logging.level.com.hotel.reservation=DEBUG
+
+# ============================================
+# CONFIGURACIÓN DE EMAIL - DEBES CAMBIAR ESTO
+# ============================================
+# Para Gmail, necesitas:
+# 1. Ir a https://myaccount.google.com/security
+# 2. Activar "Verificación en 2 pasos"
+# 3. Buscar "Contraseñas de aplicaciones"
+# 4. Generar una contraseña para "Correo"
+# 5. Copiar el código de 16 caracteres aquí
+
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=TU_EMAIL@gmail.com
+spring.mail.password=TU_APP_PASSWORD_AQUI
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com
+
+# Email Settings
+app.mail.from=TU_EMAIL@gmail.com
+app.mail.from-name=Hotel Oaxaca Dreams

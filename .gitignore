@@ -1,0 +1,137 @@
+# ===========================
+# Backend (Spring Boot/Maven)
+# ===========================
+
+# Compiled class files
+reservation-backend/target/
+reservation-backend/*.class
+
+# Maven
+reservation-backend/.mvn/
+reservation-backend/mvnw
+reservation-backend/mvnw.cmd
+
+# Database files (H2)
+reservation-backend/data/
+*.mv.db
+*.trace.db
+
+# Log files
+reservation-backend/*.log
+reservation-backend/logs/
+
+# IDE - IntelliJ IDEA
+reservation-backend/.idea/
+reservation-backend/*.iws
+reservation-backend/*.iml
+reservation-backend/*.ipr
+reservation-backend/out/
+
+# IDE - Eclipse
+reservation-backend/.classpath
+reservation-backend/.project
+reservation-backend/.settings/
+reservation-backend/bin/
+
+# IDE - NetBeans
+reservation-backend/nbproject/private/
+reservation-backend/build/
+reservation-backend/nbbuild/
+reservation-backend/dist/
+reservation-backend/nbdist/
+
+# ===========================
+# Frontend (React/Vite)
+# ===========================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# Production build
+frontend/dist/
+frontend/build/
+
+# Testing
+frontend/coverage/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# IDE - VSCode
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+frontend/*.code-workspace
+
+# IDE - IntelliJ IDEA
+frontend/.idea/
+frontend/*.iws
+frontend/*.iml
+frontend/*.ipr
+
+# ===========================
+# OS Files
+# ===========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================
+# Temporary Files
+# ===========================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~.nib
+*.bak
+
+# ===========================
+# Security - NEVER COMMIT!
+# ===========================
+
+# Credentials and secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.cer
+*.crt
+secrets/
+credentials/
+
+# IMPORTANT: Review application.properties before committing!
+# Remove sensitive email credentials
